@@ -1,0 +1,229 @@
+#head {
+    position: fixed;
+    width: 100%;
+    z-index: 9;
+    transition: all .7s;
+}
+
+
+/* 内容主体 */
+/* 内容头部 */
+.subBanner {
+    width: 100%;
+    position: relative;
+    background: #000;
+    height: 60vh;
+    overflow: hidden;
+}
+
+.bShow::after {
+    width: 1px;
+    height: 100vh;
+    position: fixed;
+    right: 100px;
+    bottom: 0px;
+    content: '';
+    background-color: rgba(255, 255, 255, 0.2);
+    -webkit-transition: all .5s;
+}
+
+.subBanner .img {
+    width: 110vw;
+    height: 100%;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    background: url(../img/joinBanner.jpg) center center no-repeat;
+    background-size: cover;
+    opacity: .7;
+    -webkit-animation: subs 6s linear 1;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-transform: translateX(-5%);
+}
+
+@keyframes subs {
+    0% {
+        -webkit-transform: translateX(-5%);
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+    }
+}
+
+.slogan {
+    width: auto;
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    color: #fff;
+    z-index: 0;
+}
+
+.slogan .title {
+    width: 100%;
+    margin-bottom: 2vw;
+    line-height: 1.4;
+}
+
+.subBanner img {
+    position: relative;
+}
+
+.sloganNav {
+    width: 100%;
+    display: flex;
+}
+
+.sloganNav a {
+    display: block;
+    padding: 0px 20px;
+    height: auto;
+    line-height: 40px;
+    color: #fff;
+    border: 1px solid #fff;
+    font-size: 16px;
+    margin-right: 15px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.sloganNav a:hover,
+.sloganNav a.active {
+    border-color: #23ac38;
+    background-color: #23ac38;
+}
+
+/* 切换页面 */
+.mbx {
+    width: 100%;
+    height: auto;
+    line-height: 40px;
+    position: relative;
+    background: #ebebeb;
+    color: #3e3e3e;
+}
+
+.w1400 {
+    width: 90%;
+    max-width: 1400px;
+    margin: 0px auto;
+    position: relative;
+}
+
+.mbx span,
+.mbx a {
+    padding: 0px 5px;
+    color: #3e3e3e;
+}
+
+.mbx span.active {
+    color: #0f3684;
+}
+
+.boxes.jbox {
+    background: url(../img/rencai.jpg) center center no-repeat;
+    background-size: auto;
+    background-size: cover;
+}
+
+.boxes {
+    position: relative;
+    padding: 6vw 0px;
+    background: #fff;
+}
+
+.w1400 {
+    width: 90%;
+    max-width: 1400px;
+    margin: 0px auto;
+    position: relative;
+}
+
+.tupian {
+    width: 620px;
+}
+
+/* 底部 */
+#footer {
+    position: relative;
+}
+
+.footer {
+    height: auto;
+    background-image: url(../img/footerBg.jpg);
+    background-size: cover;
+    padding: 75px 0px 0px;
+}
+
+/* 返回顶部 */
+.backTop {
+    position: fixed;
+    z-index: 2;
+    right: 2%;
+    bottom: 10%;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+    cursor: pointer;
+    line-height: 50px;
+    font-size: 18px;
+    border-radius: 50%;
+    z-index: 50;
+    color: rgba(0, 0, 0, .4);
+    text-align: center;
+    -webkit-transition: all .5s;
+    -webkit-transform: scale(0);
+    opacity: 0;
+}
+
+.backTop:hover {
+    background-color: #063979;
+    color: #fff;
+}
+
+.backTop.active {
+    -webkit-transform: scale(1);
+    opacity: 1;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    .bShow::after {
+        right: 50px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .bShow::after {
+        display: none;
+    }
+
+    .subBanner {
+        margin-top: 60px;
+        height: 40vh;
+    }
+
+    .slogan {
+        top: 55%;
+        width: 90%;
+    }
+
+    .slogan .title {
+        width: 280px;
+    }
+
+    .sloganNav a {
+        padding: 0px 10px;
+        line-height: 40px;
+        font-size: 14px;
+        margin-bottom: 5px;
+        margin-right: 10px;
+        text-align: center;
+    }
+    .tupian {
+        width: 100%;
+      }
+      
+}
