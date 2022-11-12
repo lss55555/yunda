@@ -1,0 +1,621 @@
+#head {
+    position: fixed;
+    width: 100%;
+    z-index: 9;
+    transition: all .7s;
+}
+
+
+/* 内容主体 */
+/* 内容头部 */
+.subBanner {
+    background: #000;
+    height: 60vh;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.subBanner .img {
+    width: 110vw;
+    height: 100%;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    background: url(../img/01.jpg) center center no-repeat;
+    background-size: cover;
+    opacity: .7;
+    -webkit-animation: subs 6s linear 1;
+    animation-fill-mode: none;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-transform: translateX(-5%);
+}
+
+@keyframes subs {
+    0% {
+        -webkit-transform: translateX(-5%);
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+    }
+}
+
+.slogan {
+    width: auto;
+    margin-bottom: 2vw;
+    line-height: 1.4;
+    position: absolute;
+    left: 10%;
+    top: 55%;
+    -webkit-transform: translateY(-50%);
+    color: #fff;
+    z-index: 10;
+}
+
+.subBanner img {
+    position: relative;
+}
+
+.bShow::after {
+    width: 1px;
+    height: 100vh;
+    position: fixed;
+    right: 100px;
+    bottom: 0px;
+    content: '';
+    background-color: rgba(255, 255, 255, 0.2);
+    -webkit-transition: all .5s;
+}
+
+/* 切换内容 */
+.mbx {
+    width: 100%;
+    height: auto;
+    line-height: 40px;
+    position: relative;
+    background: #ebebeb;
+    color: #3e3e3e;
+}
+
+.w1400 {
+    width: 90%;
+    max-width: 1400px;
+    margin: 0px auto;
+    position: relative;
+}
+
+.mbx span,
+.mbx a {
+    padding: 0px 5px;
+    color: #3e3e3e;
+}
+
+.mbx span.active {
+    color: #0f3684;
+}
+
+/* 业务介绍 */
+.boxes {
+    position: relative;
+    padding: 6vw 0px;
+    background: #fff;
+}
+
+.yunweiBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.yunweiBox .thum {
+    width: 50%;
+}
+
+.thum {
+    position: relative;
+    overflow: hidden;
+}
+
+.ywR {
+    width: 45%;
+}
+
+.titleLogo {
+    width: 84px;
+    margin-bottom: 1vw;
+}
+
+.subTitle {
+    width: 100%;
+    position: relative;
+    font-size: 30px;
+    margin-bottom: 1vw;
+    color: #103784;
+    line-height: 2;
+}
+
+.singePage {
+    width: 100%;
+    line-height: 2;
+    font-size: 16px;
+}
+
+.singePage.p15 {
+    padding-bottom: 15px;
+}
+
+.pc-show {
+    display: block;
+}
+
+.ywImg {
+    width: 100%;
+    margin-top: 3vw;
+}
+
+.pc-hide {
+    display: none;
+}
+
+/* 标准化 */
+.standBox {
+    background: url(../img/ywBg.jpg) center center no-repeat;
+    background-size: auto;
+    background-size: cover;
+    height: 80vh;
+    padding: 0px;
+    overflow: hidden;
+}
+
+.stWords {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 0%;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 360px;
+    opacity: .1;
+}
+
+.standBox .w1400 {
+    height: 100%;
+}
+
+.bzBox {
+    width: 50%;
+    position: absolute;
+    left: 40%;
+    top: 15%;
+}
+
+.standBox .subTitle.cj {
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    margin-bottom: 1.5vw;
+    padding-bottom: 1.5vw;
+}
+
+.bzList {
+    width: 100%;
+    display: flex;
+    padding-top: 30px;
+    flex-wrap: wrap;
+}
+
+.bzList li {
+    width: 150px;
+    margin-bottom: 15px;
+}
+
+.bzList li .thum {
+    width: 110px;
+    height: auto;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    margin: 0px auto;
+}
+
+.pic {
+    background: center center no-repeat;
+    background-size: cover;
+    -webkit-transition: all .5s;
+}
+
+.bzList li:first-child .pic {
+    background-image: url(../img/image_1634882149_Qyg02Q2K.jpg);
+}
+
+.bzList li:nth-child(2) .pic {
+    background-image: url(../img/image_1635506380_WU7DjJlj.jpg);
+}
+
+.bzList li:nth-child(3) .pic {
+    background-image: url(../img/image_1635506402_kLvOuUHY.jpg);
+}
+
+.bzList li:nth-child(4) .pic {
+    background-image: url(../img/image_1635506424_r12jec12.jpg);
+}
+
+.bzList li:nth-child(5) .pic {
+    background-image: url(../img/image_1635506446_s53UdW9s.jpg);
+}
+
+.bzList li:nth-child(6) .pic {
+    background-image: url(../img/image_1635506472_znE2H4eF.jpg);
+}
+
+.bzList li:nth-child(7) .pic {
+    background-image: url(../img/image_1635506497_CwYogwz3.jpg);
+}
+
+.bzList li:nth-child(8) .pic {
+    background-image: url(../img/image_1635506523_xOLa5n6o.jpg);
+}
+
+.bzList li .txt {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.bzImg {
+    width: 25%;
+    height: auto;
+    position: absolute;
+    left: 10%;
+    bottom: 0%;
+}
+
+/* 专业化 */
+.zyBox {
+    background: #003E6D url(../img/zyBg.jpg);
+}
+
+.subTitle.w {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    margin-bottom: 3vw;
+}
+
+.mySwiper1 .swiper-slide {
+    opacity: .3;
+    -webkit-transition: all .5s;
+}
+
+.mySwiper1 .swiper-slide.swiper-slide-active {
+    opacity: 1;
+    -webkit-transform: scale(1);
+}
+
+.screenSwiper .swiper-slide .thum::after {
+    width: 100%;
+    height: 40%;
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    background: linear-gradient(-180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, .5));
+    content: '';
+}
+
+.mySwiper1 .swiper-slide .pic.pic1 {
+    background-image: url(../img/image_1629180855_m77CwhYk.jpg);
+}
+
+.mySwiper1 .swiper-slide .pic.pic2 {
+    background-image: url(../img/image_1629183156_TuU8yEn4.jpg);
+}
+
+.mySwiper1 .swiper-slide .pic.pic3 {
+    background-image: url(../img/image_1629183340_WczoPask.jpg);
+}
+
+.mySwiper1 .swiper-slide:hover .pic {
+    -webkit-transform: scale(1.05);
+}
+
+.mySwiper1 .swiper-button-next,
+.mySwiper1 .swiper-button-prev {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px rgb(0 0 0 / 10%);
+    color: #103784;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: 20px;
+}
+
+.mapBox {
+    background: url(../img/mapBg.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.subTitle.cj {
+    margin-bottom: 3vw;
+}
+
+.subTitle.cj p {
+    font-size: 16px;
+    opacity: .7;
+}
+
+.mapMain {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    direction: rtl;
+}
+
+.mapMain .mapR {
+    width: 60%;
+}
+
+.mapMain .mapL {
+    direction: initial;
+    width: 40%;
+}
+
+.mapMain .citys {
+    width: 100%;
+    position: relative;
+}
+
+.mapMain .citys h2 {
+    display: block;
+    width: 100%;
+    font-size: 20px;
+    line-height: 2;
+}
+
+.mapMain .citys ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+.mapMain .citys ul li {
+    box-sizing: border-box;
+    width: calc(100% / 5);
+    height: auto;
+    position: relative;
+    padding-left: 15px;
+    line-height: 35px;
+    font-size: 14px;
+}
+
+.mapMain .citys ul li::after {
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 0px;
+    top: 17px;
+    content: '';
+    background: rgba(0, 0, 0, .3);
+    border-radius: 50%;
+}
+
+.cityTel {
+    width: 100%;
+    display: flex;
+    margin-top: 25px;
+}
+
+.cityTel a {
+    color: #3e3e3e;
+    width: 50%;
+    position: relative;
+}
+
+.cityTel a p {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.cityTel a p::after {
+    width: 30px;
+    height: 4px;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    background-color: #23ac38;
+    content: '';
+}
+
+.cityTel a b {
+    font-family: din;
+    font-size: 35px;
+    background: linear-gradient(to right, #23ac38, #103784);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* 底部 */
+#footer {
+    position: relative;
+}
+
+.footer {
+    height: auto;
+    background-image: url(../img/footerBg.jpg);
+    background-size: cover;
+    padding: 75px 0px 0px;
+}
+
+/* 返回顶部 */
+.backTop {
+    position: fixed;
+    z-index: 2;
+    right: 2%;
+    bottom: 10%;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+    cursor: pointer;
+    line-height: 50px;
+    font-size: 18px;
+    border-radius: 50%;
+    z-index: 50;
+    color: rgba(0, 0, 0, .4);
+    text-align: center;
+    -webkit-transition: all .5s;
+    -webkit-transform: scale(0);
+    opacity: 0;
+}
+
+.backTop:hover {
+    background-color: #063979;
+    color: #fff;
+}
+
+.backTop.active {
+    -webkit-transform: scale(1);
+    opacity: 1;
+}
+
+@media screen and (max-width: 1400px) {
+    .singePage {
+        width: 100%;
+        line-height: 2;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    .bShow::after {
+        right: 50px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .bShow::after {
+        display: none;
+    }
+
+    .subBanner {
+        margin-top: 60px;
+        height: 40vh;
+    }
+
+    .slogan {
+        top: 55%;
+        width: 90%;
+    }
+
+    .slogan .title {
+        width: 280px;
+    }
+
+    .yunweiBox .thum {
+        margin-bottom: 10px;
+    }
+
+    .yunweiBox .thum,
+    .ywR {
+        width: 100%;
+    }
+
+    .titleLogo {
+        display: none;
+    }
+
+    .subTitle {
+        margin-bottom: 0px;
+        font-size: 24px;
+    }
+
+    .pc-show {
+        display: none;
+    }
+
+    .pc-hide {
+        display: flex;
+    }
+
+    .standBox {
+        height: auto;
+    }
+
+    .stWords {
+        font-size: 200px;
+        opacity: .05;
+    }
+
+    .bzBox {
+        width: 100%;
+        position: relative;
+        left: 0%;
+        top: 0%;
+        padding: 35px 0px;
+    }
+
+    .subTitle.cj b {
+        display: block;
+    }
+
+    .bzList {
+        padding-top: 0%;
+        margin-top: 20px;
+    }
+
+    .bzList a {
+        width: calc(100%/3);
+    }
+
+    .bzList a .thum {
+        width: 80%;
+    }
+
+    .bzList a .txt {
+        margin-top: 5px;
+    }
+
+    .bzImg {
+        display: none;
+    }
+
+    .subTitle.cj p {
+        font-size: 14px;
+    }
+
+    .mapMain {
+        flex-wrap: wrap;
+    }
+
+    .mapMain .mapR {
+        width: 100%;
+    }
+
+    .mapMain .mapL {
+        width: 100%;
+    }
+
+    .mapMain .citys ul {
+        margin-bottom: 10px;
+    }
+
+    .mapMain .citys ul li {
+        width: calc(100%/4);
+        font-size: 12px;
+        padding-left: 10px;
+    }
+
+    .mapMain .citys ul li::after {
+        top: 14px;
+    }
+}
