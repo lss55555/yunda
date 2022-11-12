@@ -1,0 +1,168 @@
+.footerTop {
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, .05);
+  padding-bottom: 55px;
+}
+.footerTop .footerBox {
+  display: flex;
+  justify-content: space-between;
+}
+.footerBox {
+  width: 90%;
+  max-width: 1400px;
+  margin: 0px auto;
+  position: relative;
+}
+.footerTop .socals {
+  width: 300px;
+  position: relative;
+  color: #fff;
+  text-align: center;
+}
+.footerTop .socals b {
+  display: block;
+  width: 100%;
+  font-size: 36px;
+  text-align: left;
+  font-weight: normal;
+  margin-bottom: 2vw;
+}
+.soDiv {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.soDiv .so {
+  width: 45%;
+}
+.soDiv .so img {
+  width: 100%;
+  margin-bottom: .5vw;
+}
+.soDiv .so p {
+  display: block;
+  width: 100%;
+  font-size: 12px;
+  opacity: .7;
+}
+.conAddress {
+  width: 450px;
+  margin-right: 100px;
+  color: #fff;
+}
+.conAddress ul li {
+  margin-bottom: 35px;
+  color: #fff;
+}
+.conAddress ul li .txt {
+  width: 100%;
+  font-size: 14px;
+  line-height: 30px;
+  position: relative;
+  display: flex;
+}
+.conAddress ul li .txt .icon {
+  margin-right: 5px;
+}
+.conAddress ul li .txt .icon i {
+	font-size: 20px;
+}
+.conAddress ul li .des {
+  font-size: 16px;
+  line-height: 1.6;
+}
+.footerBottom {
+  width: 100%;
+}
+.footerBottom .footerBox {
+  display: flex;
+  justify-content: space-between;
+  line-height: 50px;
+  color: rgba(255, 255, 255, .5);
+  font-size: 12px;
+}
+.footerNav {
+  width: auto;
+  display: flex;
+}
+.footerBottom a {
+  color: rgba(255, 255, 255, .5);
+}
+.footerNav a {
+  padding-right: 15px;
+  font-size: 12px;
+}
+.cpright {
+  margin-right: 80px;
+}
+@media screen and (max-width: 1400px){
+    .footerTop .socals b {
+        font-size: 30px;
+      }
+      .conAddress ul li .des {
+        font-size: 14px;
+        line-height: 2;
+      }
+}
+@media screen and (max-width: 768px){
+    .footerTop {
+        padding-bottom: 15px;
+      }
+      .footerTop .footerBox {
+        flex-wrap: wrap;
+      }
+      .footerTop .socals {
+        width: 100%;
+        margin-bottom: 15px;
+      }
+      .footerTop .socals b {
+        font-size: 20px;
+      }
+      .soDiv {
+        justify-content: flex-start;
+      }
+      .soDiv .so:first-child {
+        margin-right: 10px;
+      }
+      .soDiv .so {
+        width: 30%;
+      }
+      .soDiv .so p {
+        line-height: 2;
+      }
+      .conAddress {
+        width: 100%;
+        margin-right: 0%;
+      }
+      .conAddress ul li {
+        margin-bottom: 5px;
+      }
+      .conAddress ul li .txt {
+        line-height: 25px;
+      }
+      .conAddress ul li .txt .icon {
+        width: 25px;
+        height: 25px;
+        background-color: #fff;
+        border-radius: 50%;
+        color: #1b90cd;
+        line-height: 25px;
+        text-align: center;
+      }
+      .conAddress ul li .txt .icon i {
+          
+        font-size: 14px;
+      }
+      .conAddress ul li .des {
+        padding-left: 30px;
+      }
+      .footerNav {
+        display: none;
+      }
+      .cpright {
+        margin-right: 0%;
+        line-height: 2;
+        padding: 10px 0px;
+      }
+}
