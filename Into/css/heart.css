@@ -1,0 +1,184 @@
+#head {
+    position: fixed;
+    width: 100%;
+    z-index: 9;
+    transition: all .7s;
+}
+
+/* 内容 */
+.detail_page {
+    width: 100%;
+    background: #fff;
+    position: relative;
+}
+
+/* 第一部分内容 */
+.detailTop {
+    background: #041a58 url(../news/img/focusBg.jpg) center bottom no-repeat;
+    color: #fff;
+}
+
+.detailTop {
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding-top: 250px;
+    padding-bottom: 50px;
+}
+
+.bShow::after {
+    z-index: 9;
+    width: 1px;
+    height: 100vh;
+    position: fixed;
+    right: 100px;
+    bottom: 0px;
+    content: '';
+    background-color: rgba(255, 255, 255, 0.2);
+    -webkit-transition: all .5s;
+}
+
+.w1400 {
+    width: 90%;
+    max-width: 1400px;
+    margin: 0px auto;
+    position: relative;
+}
+
+.detailTop .title {
+    display: block;
+    margin-bottom: 30px;
+    line-height: 1.2;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.detailTop .info {
+    display: block;
+    line-height: 1;
+    font-size: 14px;
+}
+
+/* 第二部分内容 */
+.dpl {
+    width: 100%;
+    height: auto;
+    background: #fff;
+    padding: 50px 0px;
+    margin-bottom: 47px;
+}
+
+.singePage {
+    width: 100%;
+    line-height: 2;
+    font-size: 16px;
+}
+
+.singePage p {
+    margin-bottom: 15px;
+}
+
+.detail_page .singePage img {
+    display: inline-block;
+    width: 50%;
+}
+
+/* 第三部分 */
+.ndc_npnews {
+    width: 100%;
+    height: auto;
+    display: flex;
+    background: #f3f3f3;
+}
+
+.ndc_npnews .post_prev {
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.ndc_npnews .post_next,
+.ndc_npnews .post_prev {
+    display: block;
+    width: 100%;
+    display: flex;
+    font-size: 24px;
+    line-height: 1.8;
+    flex-wrap: wrap;
+    padding: 50px 0px;
+}
+
+.ndc_npnews .txt {
+    display: block;
+    width: 100%;
+    margin-bottom: 6px;
+    font-size: 16px;
+    opacity: .7;
+}
+
+.ndc_npnews a {
+    color: #3e3e3e;
+}
+
+/* 底部 */
+#footer {
+    position: relative;
+}
+
+.footer {
+    height: auto;
+    background-image: url(../img/footerBg.jpg);
+    background-size: cover;
+    padding: 75px 0px 0px;
+}
+
+/* 返回顶部 */
+.backTop {
+    position: fixed;
+    z-index: 2;
+    right: 2%;
+    bottom: 10%;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+    cursor: pointer;
+    line-height: 50px;
+    font-size: 18px;
+    border-radius: 50%;
+    z-index: 50;
+    color: rgba(0, 0, 0, .4);
+    text-align: center;
+    -webkit-transition: all .5s;
+    -webkit-transform: scale(0);
+    opacity: 0;
+}
+
+.backTop:hover {
+    background-color: #063979;
+    color: #fff;
+}
+
+.backTop.active {
+    -webkit-transform: scale(1);
+    opacity: 1;
+}
+
+@media screen and (max-width: 1400px) {
+    .singePage {
+        width: 100%;
+        line-height: 2;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    .bShow::after {
+        right: 50px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .singePage img {
+        display: block;
+        width: 100% !important;
+        height: auto !important;
+      }
+}
